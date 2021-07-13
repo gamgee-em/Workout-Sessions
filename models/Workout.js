@@ -7,7 +7,7 @@ const workoutSchema = new Schema({
         type: Date,
         default: () => new Date(),
     },
-    exercise_type: {
+    exercises: {
         type: String,
         enum: {
             values: [ 'Resistance', 'Cardio' ],
@@ -16,7 +16,7 @@ const workoutSchema = new Schema({
         },
         required: true,
     },
-    exercise_name: {
+    name: {
         type: String,
         trim: true,
         required: true,
