@@ -32,7 +32,7 @@ Open the CL / clone directory to local client / cd into the Directory where serv
 
 * Start server. Run command
 
-        npm run watch
+        npm start
 
 ## __License__
 __Copyright 2021 Sam Sweigart__
