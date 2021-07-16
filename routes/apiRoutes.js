@@ -1,9 +1,8 @@
 const router = require('express').Router();
 const Workout = require('../models/Workout.js');
 
-//! try using destructuring syntax on req parameter
-router.post('/api/workouts', (req, res) => {
-    Workout.create( req.body )
+router.post('/', ({ body }, res) => {
+    Workout.create( body )
         .then(workoutData => {
             res.status(200).json(workoutData);
         }).catch(err => {
@@ -11,32 +10,32 @@ router.post('/api/workouts', (req, res) => {
         });
 });
 
-//! try using destructuring syntax on req parameter
-router.put('/api/workouts/:id', ({ body, params }, res) => {
+router.put('/:id', ({ body, params }, res) => {
     Workout.findByIdAndUpdate(params.id,
-        { $push: { exercises: body } },
+        { 
+            $push: { exercises: body, }, 
+        },
         { 
             new: true,
-            runValidators: true,
-         },
+            runValidators: true, 
+        },
     ).then(workoutData => res.status(200).json(workoutData))
         .catch(err => res.status(400).json(err));
 });
 
-router.get('/api/workouts', (req, res) => {
+router.get('/', (req, res) => {
     Workout.aggregate ([
         {
             $addFields: {
-                totalDuration: {
-                    $sum: '$exercies.duration',
-                },
+                totalDuration: { $sum: '$exercises.duration', },
             },
         },
-    ]).then(workoutData => res.status(200).json(workoutData))
-        .catch(err => res.status(400).json(err))
+    ])
+    .then(workoutData => res.status(200).json(workoutData))
+        .catch(err => res.status(400).json(err));
 });
 
-router.get('/api/workouts/range', (req, res) => {
+router.get('/range', (req, res) => {
     Workout.find({})
     .then(workoutData => res.status(200).json(workoutData))
         .catch(err => res.status(400).json(err));
