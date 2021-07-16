@@ -9,7 +9,7 @@ Full stack application using express, mongo js, mongoose, node js. Allows the us
 * [Tests](#tests)
 * [License](#license)
 * [Badges](#badges)
-* [GIF](#gif)
+* [Screenshots](#screenshots)
 * [Contributors](#contributors)
 * [Contact Information](#questions)
 * [Demo](#demo)
@@ -41,8 +41,11 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## __Badges__
 [![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg)](https://opensource.org/licenses/MIT)
-## __GIF__
-![Application Demo]()
+## __Screenshots__
+![Screen Shot 2021-07-16 at 2 29 31 PM](https://user-images.githubusercontent.com/56444674/125992548-948ad5a8-e7f3-47fb-a693-0b32cfcb3b48.png)
+![Screen Shot 2021-07-16 at 2 22 14 PM](https://user-images.githubusercontent.com/56444674/125992561-854cb97f-53b2-4dc9-a5e7-d97f281b921f.png)
+![Screen Shot 2021-07-16 at 2 21 51 PM](https://user-images.githubusercontent.com/56444674/125992569-0cb7aebc-c6bd-4400-bf44-27f5b46d047a.png)
+![Screen Shot 2021-07-16 at 2 21 43 PM](https://user-images.githubusercontent.com/56444674/125992576-c24867cd-368a-4d02-a3cb-59cb9f244347.png)
 ## __Contributors__
 Sam Sweigart
 ## __Questions__
