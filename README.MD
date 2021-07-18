@@ -53,4 +53,4 @@ If you would like to contribute to the project please contact me below:
 * [GitHub](https://github.com/gamgee-em)
 * [E-mail](mailto:samuel.sweigart@gmail.com)
 ## __Demo__
-[Click for Full Demo]() (set video quality to 720p / 1080p)
+[Click for Deployed Application](https://pacific-lowlands-32048.herokuapp.com) (set video quality to 720p / 1080p)
