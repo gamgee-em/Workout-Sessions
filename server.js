@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const logger = require('morgan');
 const app = express();
 const routes = require('./routes');
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: true }));
